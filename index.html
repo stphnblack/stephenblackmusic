@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122031925-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122031925-1');
+</script>
+
+<script>
+$(window).load(function(){
+$('button').click(function() {
+    $('h2').text(randomEl(adjectives)+' '+randomEl(nouns));
+    selectElementContents($('h2')[0]);
+});
+
+function randomEl(list) {
+    var i = Math.floor(Math.random() * list.length);
+    return list[i];
+}
+
+function selectElementContents(el) {
+    var range = document.createRange();
+    range.selectNodeContents(el);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+}
+
+var adjectives = ["wheel-dealing","bingo","radical","kooky","downtown","full-sail","conniving","unethical","yosemite","american","bitter","sweet","regular","spooky","mister","mysterious","formidable","chunky","cool","honorable","buttery","the","sneaky","gratuitous","central","sleepy","suspicious","jaded","scarlet","ineffable","nefarious","ethereal","illicit","iridescent","discombobulated","edgy","slippery","westside","spicy","serbian","gospel","cool ranch","notorious","gimpy","lemon-scented","musical","obtuse","compromised"];
+var nouns = ["bongo", "man", "jelly","slime","dongle","linus","barnacle","nugget","raptor","boi","flirt","folly","skipper","tetra","stump","lump","chump","gravy","doily","black","chaos","plasma","vortex","epoch","oblivion","cronut","kumquat","bean","squeegee","innuendo","jabroni","kerfuffle","joe","elbow","box","splash","breath","omelette","pants","justice","gimmick","acorn","standoff","towelette","surfer"];
+
+$('button').click();
+});
+</script>
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Georgia;
+    font-size: 18px;
+     margin-bottom: 50px;
+    
+}
+section article {margin: 0 auto;}
+body{
+ background-image: url("/snail.jpg");
+ background-repeat: repeat;
+ background-size: 720px 540px;
+}
+section{
+ margin-bottom: 50px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    border: 2px solid #555555;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover{
+	background-color: #555555;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+<section class="a w3-container w3-center" >
+  <h2 class="a w3-wide">music</h2>
+  <p class="w3-opacity"><i>gotta love music</i></p>
+  <p class="w3-opacity"><i>here's some of mine</i></p>
+  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=eONL1XwM8I4" target="_blank">no. 1</a></i></p>
+  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=Pjpwc4hIfFY" target="_blank">nautilus</a></i></p>
+  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=3u1Y5qKvOaM" target="_blank">noodlin</a></i></p>
+  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=KRjLa8xYIb8" target="_blank">b cool</a></i></p>
+  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=rZhYvifSHi8" target="_blank">t & s jig</a></i></p>
+  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=XNKDMNHYp60" target="_blank">end credits</a></i></p>
+  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=m1pjcapDpBE" target="_blank">erebus / organelle jam</a></i></p>
+	<p style="padding-top: 10%">
+	<button>give me a new stage name</button>
+	</p>
+</section>
+<section class="a w3-container w3-center">
+	
+</section>
+
+<footer>
+<p class="w3-opacity">stephenblacksound@gmail.com</p>
+</footer>
+</body>
+
+
+
+</html>
