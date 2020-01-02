@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="some of stephen black's music">
 <meta name="author" content="Stephen Black">
-<meta name="keywords" content="stephenblackmusic, stephen, black, music, sound">
+<meta name="keywords" content="stephenblackmusic, stephen black, music, sound, lemon-scented justice, giant's causeway">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 
 <title>Stephen Black Music</title>
-<link rel="shortcut icon" type="image/x-icon" href="snail.jpg" />
+<link rel="shortcut icon" type="image/x-icon" href="snail inverted.png" />
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -45,25 +45,31 @@ function selectElementContents(el) {
     sel.addRange(range);
 }
 
-var adjectives = ["wheel-dealing","bingo","radical","kooky","downtown","full-sail","conniving","unethical","yosemite","american","bitter","sweet","regular","spooky","mister","mysterious","formidable","chunky","cool","honorable","buttery","the","sneaky","gratuitous","central","sleepy","suspicious","jaded","scarlet","ineffable","nefarious","ethereal","illicit","iridescent","discombobulated","edgy","slippery","westside","spicy","serbian","gospel","cool ranch","notorious","gimpy","lemon-scented","musical","obtuse","compromised","paranormal","derivative","scraggly"];
-var nouns = ["bongo", "man", "jelly","slime","dongle","linus","barnacle","nugget","raptor","boi","flirt","folly","skipper","tetra","stump","lump","chump","gravy","doily","black","chaos","plasma","vortex","epoch","oblivion","cronut","kumquat","bean","squeegee","innuendo","jabroni","kerfuffle","joe","elbow","box","splash","breath","omelette","pants","justice","gimmick","acorn","standoff","towelette","surfer","king","tingle","algorithm","soapbox","doorknob"];
+var adjectives = ["wheel-dealing","bingo","radical","kooky","downtown","full-sail","conniving","unethical","yosemite","american","bitter","sweet","regular","spooky","mister","mysterious","formidable","chunky","cool","honorable","buttery","the","sneaky","gratuitous","central","sleepy","suspicious","jaded","scarlet","ineffable","nefarious","ethereal","illicit","iridescent","discombobulated","edgy","slippery","westside","spicy","serbian","gospel","cool ranch","notorious","gimpy","lemon-scented","musical","obtuse","compromised","paranormal","derivative","scraggly","danger", "soulful",
+	"exonerated","lifeless","spontaneous"];
+var nouns = ["bongo", "man", "jelly","slime","dongle","linus","barnacle","nugget","raptor","boi","flirt","folly","skipper","tetra","stump","lump","chump","gravy","doily","black","chaos","plasma","vortex","epoch","oblivion","cronut","kumquat","bean","squeegee","innuendo","jabroni","kerfuffle","joe","elbow","box","splash","breath","omelette","pants","justice","gimmick","acorn","standoff","towelette","surfer","king","tingle","algorithm","soapbox","doorknob","zero","ghost","spore","pip"];
 
 $('button').click();
 });
+
+
 </script>
 
 <style>
 body, html {
-    height: 100%;
+  	height: 100%;
     margin: 0;
     font-family: Georgia;
     font-size: 18px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     
 }
 section article {margin: 0 auto;}
+section{
+ margin-bottom: 50px;
+}
 body{
- background-image: url("/snail.jpg");
+ background-image: url("/snail.png");
  background-repeat: repeat;
  background-size: 720px 540px;
 }
@@ -75,10 +81,11 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: black;
     color: white;
     text-align: center;
+    padding: 9px;
 }
 button {
     background-color: white;
@@ -94,6 +101,7 @@ button {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    outline: none;
 }
 button:hover{
 	background-color: #555555;
@@ -109,23 +117,31 @@ button:hover{
                                   supported by Chrome and Opera */
 }
 
+  #demobox {
+  background-color: #52770095 ;
+  padding: 1px ;
+  border: 1px solid black ;
+}
 </style>
 </head>
 
 <body>
 <section class="a w3-container w3-center" >
-  <h2 class="a w3-wide noselect">music</h2>
+  <h2 class="a w3-wide noselect">loading</h2>
   <p class="w3-opacity"><i>gotta love music</i></p>
   <p class="w3-opacity"><i>here's some of mine</i></p>
-  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=eONL1XwM8I4" target="_blank">no. 1</a></i></p>
-  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=Pjpwc4hIfFY" target="_blank">nautilus</a></i></p>
-  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=3u1Y5qKvOaM" target="_blank">noodlin</a></i></p>
-  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=KRjLa8xYIb8" target="_blank">b cool</a></i></p>
-  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=rZhYvifSHi8" target="_blank">t & s jig</a></i></p>
-  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=XNKDMNHYp60" target="_blank">end credits</a></i></p>
-  <p class="w3-opacity"><i><a href="https://www.youtube.com/watch?v=m1pjcapDpBE" target="_blank">erebus / organelle jam</a></i></p>
+  
+  <p>--------------------------------------------------------------------------------</p>
+
+  	<p class="w3-opacity" id="foo"><font size="+1"><b><a href="https://lemonscentedjustice.bandcamp.com/releases" target="_blank">lemon-scented justice presents: the giant's causeway</a></b></font></p>
+	<iframe src="https://open.spotify.com/embed/album/19J2cBcC9oj5jGxIke2m1M" width="352" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<p class="w3-opacity"><i><a href="https://www.georgegonzalezmusic.com" target="_blank">check out george gonzález's solo stuff</a></i></p>	
+  <p>--------------------------------------------------------------------------------</p>
+
+  <p class="w3-opacity"><i><a href="https://www.youtube.com/channel/UCgHBSE3Ge7qx-HqJ0frILaQ" target="_blank">some vintage jams you may be interested in</a></i></p>
+ 
 	<p style="padding-top: 1vw">
-	<button>give me a new stage name</button>
+	<button onclick="topFunction()">give me a new stage name</button>
 	</p>
 </section>
 <section class="a w3-container w3-center">
@@ -133,10 +149,23 @@ button:hover{
 </section>
 
 <footer>
-<p class="w3-opacity">stephenblacksound@gmail.com</p>
+<a class="w3-opacity">stephenblacksound@gmail.com</a>
 </footer>
 </body>
 
+<script>
+function flash() {
+    var text = document.getElementById('foo');
+    text.style.color = (text.style.color=='gold') ? 'green':'gold';
+}
+var clr = setInterval(flash, 500);
+</script>
 
+<script>
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 
 </html>
